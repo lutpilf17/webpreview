@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Proker - Genbi Unsika</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="calendar.css">
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <header class="sidebar-header">
+      <a href="index.html" class="header-logo">
+        <img src="images/logo.png" alt="Genbi Unsika">
+        <span class="logo-text">Genbi Unsika</span>
+      </a>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">chevron_left</span>
+      </button>
+      <button class="toggler menu-toggler">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </header>
+    <nav class="sidebar-nav">
+      <ul class="nav-list primary-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link"><span class="material-symbols-rounded">home</span><span class="nav-label">Home</span></a></li>
+        <li class="nav-item"><a href="calendar.html" class="nav-link active"><span class="material-symbols-rounded">calendar_today</span><span class="nav-label">Calendar</span></a></li>
+        <li class="nav-item"><a href="team.html" class="nav-link"><span class="material-symbols-rounded">group</span><span class="nav-label">Team</span></a></li>
+        <li class="nav-item"><a href="leaderboard.html" class="nav-link"><span class="material-symbols-rounded">leaderboard</span><span class="nav-label">Leaderboard</span></a></li>
+      </ul>
+      <ul class="nav-list secondary-nav">
+        <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">account_circle</span><span class="nav-label">Profile</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">logout</span><span class="nav-label">Logout</span></a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="content">
+    <h1>Kalender Program Kerja</h1>
+    <div id="calendar"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="eventTitle"></h2>
+      <p id="eventDesc"></p>
+      <p><b>Capaian:</b> <span id="eventProgress"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <!-- Custom JS -->
+  <script src="calendar.js"></script>
+</body>
+</html>
